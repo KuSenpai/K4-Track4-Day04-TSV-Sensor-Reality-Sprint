@@ -5,7 +5,7 @@ Chủ đề T4 · xe ADAS · camera + LiDAR · dữ liệu **tổng hợp**. B�
 
 ## Problem
 
-Công thức sai số ≈ v×Δt chỉ đúng khi tốc độ gần không đổi. Tôi phân tích điều gì hỏng khi vật phanh gấp: công thức, hay bộ bù chuyển động dựa trên nó.
+Công thức sai số ≈ v×Δt chỉ đúng khi tốc độ gần không đổi. Nhóm phân tích điều gì hỏng khi vật phanh gấp: công thức, hay bộ bù chuyển động dựa trên nó.
 
 ## Method
 
