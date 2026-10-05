@@ -1,6 +1,6 @@
 # CHECKLIST – tự kiểm và rubric
 
-Lưu ý: nội dung gốc của "Bước 6" trong đề **không được cung cấp** cho nhóm khi làm repo này; các mục dưới đây được dựng lại từ phần tóm tắt đề (yêu cầu nộp bài, spec T4, ràng buộc). Nhóm nên đối chiếu với đề gốc trên VLearn.
+Lưu ý: nhóm không có nội dung gốc của "Bước 6" trong đề khi làm repo này, nên các mục dưới đây được dựng lại từ phần tóm tắt đề (yêu cầu nộp bài, spec T4, ràng buộc). Nên đối chiếu lại với đề gốc trên VLearn.
 
 ## Tự kiểm
 
@@ -27,10 +27,10 @@ Lưu ý: nội dung gốc của "Bước 6" trong đề **không được cung c
 | 19 | team_explainer có 8–10 câu hỏi giảng viên + gợi ý trả lời | PASS | [docs/team_explainer.md](docs/team_explainer.md) (10 câu) |
 | 19b | 1 trang/slide ngắn theo mẫu (Problem/Method/Benchmark/Failure case/Engineering decision) | PASS (HTML + PDF, không phải .pptx) | [pitch/TSV_T4_slide.html](pitch/TSV_T4_slide.html), [pitch/TSV_T4_slide.pdf](pitch/TSV_T4_slide.pdf) – trang 1 là bản 1 trang, trang 2–4 là hình minh họa. Nhóm quyết định không cài công cụ tạo .pptx; nếu đề bắt buộc .pptx thì cần dựng thủ công hoặc cài python-pptx |
 | 20 | README có lệnh một dòng tái hiện | PASS | [README.md](README.md) |
-| 21 | Chạy lại từ đầu trên bản sạch, exit 0 | PASS (lần chạy 2026-10-05) | Xem mục "Kiểm tra bản sạch" bên dưới; checker hiện "TẤT CẢ PASS" |
+| 21 | Chạy lại từ đầu trên bản sạch, exit 0 | PASS (lần chạy 2026-10-05) | xem mục "Kiểm tra bản sạch" bên dưới; checker hiện "TẤT CẢ PASS" |
 | 22 | Ghost rate / trajectory residual (nếu có dữ liệu phù hợp) | N/A | Không có dữ liệu phù hợp; nhóm chỉ đo sai số dư sau bù (RMSE), không đo ghost rate |
 | 23 | Mở rộng rolling-shutter line delay (chỉ sau khi xong phần tối thiểu) | N/A – chưa làm | Tùy chọn; ghi là việc vòng sau trong [failure_case.md](failure_case.md) |
-| 24 | Nộp bài trên VLearn | **FAIL (nhóm tự làm)** | Trợ lý không được phép nộp/đăng nhập VLearn; hạn 06/10/2026 11:59 (giờ VN) |
+| 24 | Nộp bài trên VLearn | **FAIL (nhóm tự làm)** | Nhóm tự nộp, không nhờ công cụ nộp hộ; hạn 06/10/2026 11:59 (giờ VN) |
 
 ## Rubric
 
