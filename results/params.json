@@ -1,0 +1,50 @@
+{
+  "seed": 42,
+  "h_s": 0.1,
+  "n_frames": 100,
+  "n_trials": 200,
+  "sigma_m": 0.1,
+  "theta_deg": 15.0,
+  "offsets_ms": [
+    0,
+    50,
+    100,
+    150,
+    200
+  ],
+  "speeds_mps": [
+    5.0,
+    10.0,
+    20.0,
+    30.0
+  ],
+  "decels_mps2": [
+    0.0,
+    2.0,
+    4.0,
+    6.0,
+    8.0
+  ],
+  "brake_v0_mps": 20.0,
+  "brake_onset_s": 5.0,
+  "brake_window_s": [
+    5.0,
+    8.0
+  ],
+  "const_window_s": [
+    1.0,
+    10.0
+  ],
+  "threshold_m": 0.5,
+  "windows_cv": [
+    3,
+    5,
+    9
+  ],
+  "windows_ca": [
+    5,
+    9
+  ],
+  "default_n": 5,
+  "data": "synthetic"
+}
