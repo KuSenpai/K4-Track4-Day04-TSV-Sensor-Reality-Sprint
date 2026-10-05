@@ -1,6 +1,6 @@
 # Báo cáo thành viên 1 – vai trò: đọc nguồn
 
-Họ tên: [CHƯA ĐIỀN: Họ tên TV1] · MSSV: [CHƯA ĐIỀN: MSSV TV1] · Nhóm: TSV
+Họ tên: Lâm Quang Anh Quân · MSSV: 2A202602467 · Nhóm: TSV
 Chủ đề T4 · xe ADAS · camera + LiDAR · dữ liệu **tổng hợp**. Bằng chứng chung: [results/results.csv](../results/results.csv), [results/summary_tables.md](../results/summary_tables.md), [SOURCES.md](../SOURCES.md). Lệnh chạy chung: `python src/run_benchmark.py && python scripts/check_submission.py`.
 
 ## Problem
