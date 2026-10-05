@@ -1,6 +1,6 @@
 # Báo cáo thành viên 3 – vai trò: ghi benchmark
 
-Họ tên: [CHƯA ĐIỀN: Họ tên TV3] · MSSV: [CHƯA ĐIỀN: MSSV TV3] · Nhóm: TSV
+Họ tên: Đinh Quốc Bảo · MSSV: 2A202602933 · Nhóm: TSV
 Chủ đề T4 · xe ADAS · camera + LiDAR · dữ liệu **tổng hợp**. Bằng chứng chung: [results/results.csv](../results/results.csv), [results/summary_tables.md](../results/summary_tables.md), [design/benchmark_design.md](../design/benchmark_design.md). Lệnh chạy chung: `python src/run_benchmark.py && python scripts/check_submission.py`.
 
 ## Problem
