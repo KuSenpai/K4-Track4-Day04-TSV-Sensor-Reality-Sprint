@@ -27,6 +27,14 @@ File này được viết **trước khi chạy code** (ngày 2026-10-05). Các 
 - Tốc độ không đổi: v ∈ {5, 10, 20, 30} m/s. Failure: v₀ = 20 m/s, bắt đầu phanh tại t = 5 s với a ∈ {0, 2, 4, 6, 8} m/s²; đánh giá trong cửa sổ t ∈ [5, 8] s.
 - Ngưỡng "đáng lo": **0.5 m** sai số vị trí – là **giả định của nhóm** (cỡ cổng gán đối tượng / một phần nhỏ bề rộng làn), không lấy từ nguồn nào.
 
+### Vì sao benchmark mô phỏng là proxy hợp lý (và hợp lý tới đâu)
+
+- **Metric đo đúng cơ chế cần hỏi.** Sai số do lệch thời gian chỉ phụ thuộc hình học chuyển động và Δt: `p(t) − p(t − Δt)`. Mô phỏng tái tạo đúng cơ chế này, nên "sai số vị trí (m)" là metric thật *của mô phỏng* và là proxy cho sai số đặt vị trí của đối tượng khi fusion trên xe thật.
+- **Có ground truth chính xác.** Trong mô phỏng ta biết vị trí thật tại đúng `t_k` và đúng Δt; dữ liệu thật thường không có ground truth thời gian tới cỡ mili-giây, nên không tách riêng được hiệu ứng của Δt.
+- **Cô lập một biến.** Chỉ đổi Δt (và gia tốc ở kịch bản failure); cùng mảng nhiễu, cùng cách tính metric cho mọi điều kiện, nên chênh lệch giữa các điều kiện là do điều kiện.
+- **Tham số nằm trong vùng thực tế (giả định của nhóm, không lấy từ nguồn):** offset 50–200 ms theo spec T4 của đề; tốc độ 5–30 m/s (18–108 km/h) phủ đô thị đến đường cao tốc; 10 Hz là tần số quét thường gặp của LiDAR quay; nhiễu 0.10 m là mức giả định.
+- **Giới hạn của proxy (kết luận không vượt quá các giới hạn này):** nhiễu thật phụ thuộc khoảng cách và vật liệu; Δt thật có jitter và không biết chính xác; quỹ đạo thật không thẳng/phanh đều; chưa có méo do chuyển động của LiDAR quay hay rolling shutter của camera. Vì vậy kết quả cho **cơ chế và cấp độ lớn** (sai số ∝ v×Δt, bộ bù chậm pha khi phanh), không cho con số tuyệt đối trên xe thật.
+
 ### Claim → metric dự kiến (viết trước khi chạy)
 
 | # | Claim ban đầu | Metric kiểm | Tiêu chí |

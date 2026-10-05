@@ -24,12 +24,20 @@ def read(p):
 tm = [l for l in read("TEAMMATES.md").splitlines() if re.match(r"^\d+\.\s", l)]
 check(len(tm) == 5, f"TEAMMATES.md co dung 5 dong thanh vien (tim thay {len(tm)})")
 
-# 2. bao cao member_1..5, du 5 muc
+# 2. bao cao thanh vien 1..5 (ten file tu do: nhan theo tieu de "Bao cao thanh vien N"), du 5 muc
+REPORTS = {}
+for fn in sorted(os.listdir(os.path.join(ROOT, "reports"))):
+    if fn.endswith(".md"):
+        m = re.match(r"#\s*Báo cáo thành viên (\d)", read(f"reports/{fn}"))
+        if m:
+            REPORTS.setdefault(int(m.group(1)), []).append(f"reports/{fn}")
+dups = {i: v for i, v in REPORTS.items() if len(v) > 1}
+check(not dups, "moi thanh vien co dung 1 file bao cao" + (f" (trung: {dups})" if dups else ""))
 SECTIONS = ["Problem", "Method", "Benchmark", "Failure case", "Engineering decision"]
 for i in range(1, 6):
-    p = f"reports/member_{i}.md"
-    ex = os.path.exists(os.path.join(ROOT, p))
-    check(ex, f"{p} ton tai")
+    p = REPORTS.get(i, [f"reports/member_{i}.md"])[0]
+    ex = i in REPORTS
+    check(ex, f"bao cao thanh vien {i} ton tai ({p})")
     if ex:
         heads = re.findall(r"^##\s+(.+?)\s*$", read(p), flags=re.M)
         miss = [s for s in SECTIONS if not any(h.startswith(s) for h in heads)]
@@ -37,7 +45,7 @@ for i in range(1, 6):
 
 # 3. file/plot duoc dan phai ton tai
 md_files = ["README.md", "SOURCES.md", "failure_case.md", "CHECKLIST.md", "design/benchmark_design.md",
-            "pitch/pitch_script.md", "docs/team_explainer.md"] + [f"reports/member_{i}.md" for i in range(1, 6)]
+            "pitch/pitch_script.md", "docs/team_explainer.md"] + [REPORTS.get(i, [f"reports/member_{i}.md"])[0] for i in range(1, 6)]
 missing = set()
 for p in md_files:
     if not os.path.exists(os.path.join(ROOT, p)):
@@ -65,7 +73,7 @@ table_nums = {round(float(x), 3) for x in NUM.findall(read("results/summary_tabl
 DESIGN = {0.1, 0.5, 0.4, 0.95, 1.05, 0.7, 0.9, 0.8, 0.2, 0.01}
 bad = []
 for p in ["failure_case.md", "pitch/pitch_script.md", "docs/team_explainer.md"] + \
-        [f"reports/member_{i}.md" for i in range(1, 6)]:
+        [REPORTS.get(i, [f"reports/member_{i}.md"])[0] for i in range(1, 6)]:
     if not os.path.exists(os.path.join(ROOT, p)):
         continue
     for ln, line in enumerate(read(p).splitlines(), 1):

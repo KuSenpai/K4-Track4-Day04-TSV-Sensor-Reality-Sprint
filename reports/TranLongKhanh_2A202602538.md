@@ -1,6 +1,6 @@
 # Báo cáo thành viên 5 – vai trò: trình bày
 
-Họ tên: [CHƯA ĐIỀN: Họ tên TV5] · MSSV: [CHƯA ĐIỀN: MSSV TV5] · Nhóm: TSV
+Họ tên: Trần Long Khánh · MSSV: 2A202602538 · Nhóm: TSV
 Chủ đề T4 · xe ADAS · camera + LiDAR · dữ liệu **tổng hợp**. Bằng chứng chung: [pitch/pitch_script.md](../pitch/pitch_script.md), [results/summary_tables.md](../results/summary_tables.md), [results/timeline_offset200ms.png](../results/timeline_offset200ms.png). Lệnh chạy chung: `python src/run_benchmark.py && python scripts/check_submission.py`.
 
 ## Problem

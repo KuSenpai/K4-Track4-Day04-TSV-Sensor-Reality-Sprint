@@ -8,4 +8,4 @@ Thành viên (đúng 5 người):
 2. Ngô Gia Quốc — MSSV 2A202602757 — vai trò chính: chạy code
 3. Đinh Quốc Bảo — MSSV 2A202602933 — vai trò chính: ghi benchmark
 4. Nguyễn Thành Nam — MSSV 2A202602827 — vai trò chính: phân tích failure
-5. [CHƯA ĐIỀN: Họ tên TV5] — MSSV [CHƯA ĐIỀN: MSSV TV5] — vai trò chính: trình bày
+5. Trần Long Khánh — MSSV 2A202602538 — vai trò chính: trình bày

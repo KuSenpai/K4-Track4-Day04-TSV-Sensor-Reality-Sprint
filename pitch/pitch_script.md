@@ -1,6 +1,6 @@
 # Kịch bản pitch – T4: LiDAR trễ bao nhiêu thì xe "nhìn nhầm chỗ"?
 
-Tổng thời lượng: **4 phút 30 giây** (trong khoảng 3–5 phút của đề; **chưa diễn tập bấm giờ thật** – cả nhóm nên đọc thử một lần). Người trình bày: [CHƯA ĐIỀN: Họ tên TV5] cùng cả nhóm TSV. Mọi số lấy từ [results/summary_tables.md](../results/summary_tables.md); dữ liệu là **tổng hợp** (mô phỏng của nhóm).
+Tổng thời lượng: **4 phút 30 giây** (trong khoảng 3–5 phút của đề; **chưa diễn tập bấm giờ thật** – cả nhóm nên đọc thử một lần). Người trình bày: Trần Long Khánh cùng cả nhóm TSV. Mọi số lấy từ [results/summary_tables.md](../results/summary_tables.md); dữ liệu là **tổng hợp** (mô phỏng của nhóm).
 
 | Phần | Thời lượng | Hình/Bảng đi kèm |
 |---|---|---|

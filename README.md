@@ -35,6 +35,7 @@ python src/run_benchmark.py && python scripts/check_submission.py
 | [failure_case.md](failure_case.md) | Failure case: phanh gấp làm bộ bù vận tốc không đổi sai |
 | [reports/](reports/) | 5 báo cáo cá nhân member_1..5 |
 | [pitch/pitch_script.md](pitch/pitch_script.md) | Kịch bản pitch 3–5 phút |
+| [pitch/TSV_T4_slide.pdf](pitch/TSV_T4_slide.pdf) | Slide: trang 1 là bản 1 trang, trang 2–4 là hình (nguồn: [TSV_T4_slide.html](pitch/TSV_T4_slide.html)) |
 | [docs/team_explainer.md](docs/team_explainer.md) | Giải thích cho cả nhóm + câu hỏi giảng viên |
 | [CHECKLIST.md](CHECKLIST.md) | Đối chiếu tự kiểm Bước 6 và rubric |
 
