@@ -1,6 +1,6 @@
 # Báo cáo thành viên 2 – vai trò: chạy code
 
-Họ tên: [CHƯA ĐIỀN: Họ tên TV2] · MSSV: [CHƯA ĐIỀN: MSSV TV2] · Nhóm: TSV
+Họ tên: Ngô Gia Quốc · MSSV: 2A202602757 · Nhóm: TSV
 Chủ đề T4 · xe ADAS · camera + LiDAR · dữ liệu **tổng hợp**. Bằng chứng chung: [results/results.csv](../results/results.csv), [results/run_log.txt](../results/run_log.txt), [src/run_benchmark.py](../src/run_benchmark.py). Lệnh chạy chung: `python src/run_benchmark.py && python scripts/check_submission.py`.
 
 ## Problem
