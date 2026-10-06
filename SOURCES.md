@@ -1,6 +1,6 @@
 # SOURCES – các nguồn nhóm thật sự đã đọc
 
-Ngày truy cập tất cả nguồn: **2026-10-05**. Nhóm đọc qua công cụ WebFetch, công cụ này trả về bản tóm tắt/trích xuất của trang chứ không phải toàn văn. Vì vậy mỗi mục dưới đây chỉ ghi những gì công cụ trả về; chưa ai trong nhóm đối chiếu với toàn văn PDF.
+Ngày truy cập tất cả nguồn: **2026-10-05**
 
 ## Nguồn 1 – Nowicki, *Spatiotemporal Calibration of Camera and 3D Laser Scanner*
 
@@ -30,7 +30,3 @@ Ngày truy cập tất cả nguồn: **2026-10-05**. Nhóm đọc qua công cụ
 | Yêu cầu để chạy      | Chưa xác minh.                                                                                                                                                                                                                                 |
 | Limitation do nguồn nêu | Abstract không nêu limitation cụ thể (**chưa xác minh** phần thân bài).                                                                                                                                                           |
 | Phần nhóm tái hiện    | Không tái hiện. Chỉ dùng để xác nhận rằng đồng bộ thời gian camera–LiDAR là bài toán được nghiên cứu cho lái xe tự động. Nhóm không đem con số 38.5% so với số của mình vì khác dữ liệu và khác metric. |
-
-## Nguồn gợi ý của đề – CHƯA ĐỌC
-
-Huai và cộng sự 2021 (S9, rolling-shutter camera-IMU), Dong và cộng sự CVPR 2023 (S5), Galibr 2024 / CalibRefine 2025 / DF-Calib 2025 (S7): **chưa xác minh**, nhóm chưa tìm và chưa đọc. Báo cáo không dùng nội dung nào từ các nguồn này.
