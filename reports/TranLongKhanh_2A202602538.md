@@ -19,7 +19,7 @@ Nhóm đo được (dữ liệu tổng hợp), trích Bảng A:
 |---|---|---|---|---|---|---|---|
 | 10 | 100 | 1.00 | 1.00 | 1.000 | 1.01 | 0.15 | 85.2 |
 | 20 | 100 | 2.00 | 2.00 | 1.000 | 2.00 | 0.15 | 92.6 |
-| 30 | 100 | 3.00 | 3.00 | 1.000 | 3.00 | 0.15 | 95.0 |
+| 30 | 100 | 3.00 | 3.00 | 1.000 | 3.00 | 0.15 | 96.0 |
 
 Với ngưỡng 0.5 m, tốc độ bắt đầu nguy hiểm là 10.0 m/s (36 km/h) ở offset 50 ms, 5.0 m/s (18 km/h) ở 100 ms, 3.3 m/s (12 km/h) ở 150 ms và 2.5 m/s (9 km/h) ở 200 ms. Tức là offset đủ lớn thì xe chạy chậm cũng vượt ngưỡng. Hình: [results/error_vs_offset.png](../results/error_vs_offset.png).
 
